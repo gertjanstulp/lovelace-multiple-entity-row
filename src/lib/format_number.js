@@ -38,7 +38,6 @@ export const formatNumber = (num, localeOptions, options) => {
         } catch (err) {
             // Don't fail when using "TEST" language
             // eslint-disable-next-line no-console
-            console.error(err);
             return new Intl.NumberFormat(undefined, getDefaultFormatOptions(num, options)).format(Number(num));
         }
     }
